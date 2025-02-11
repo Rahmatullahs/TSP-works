@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <input type="text" id="anynum1"><br>
+    <input type="text" id="anynum2"><br>
+    <input type="button" value=" + " onclick="sum()">
+    <input type="button" value=" - " onclick="sub()">
+    <input type="button" value=" * " onclick="multi()">
+    <input type="button" value=" / " onclick="div()">
+<br>
+    <input type="text" id="uttor">
+
+
+    <script>
+
+        function sum(){
+let inputnumberone = parseInt(document.getElementById("anynum1").value);
+let inputnumbertwo = parseInt(document.getElementById("anynum2").value);
+ let sum = inputnumberone + inputnumbertwo;
+document.getElementById("uttor").value=sum;
+        }
+                                                                                                                                                       
+    </script>
+</body>
+</html>
