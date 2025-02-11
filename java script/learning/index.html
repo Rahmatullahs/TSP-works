@@ -26,51 +26,53 @@
 
 
     <script>
+        function sum(){
+let number1 = parseInt(document.getElementById("number1").value);
+let number2 = parseInt(document.getElementById("number2").value);
+let sum = number1 + number2 ;
+    document.getElementById ("result").value= sum;
 
-        function sum() {
-            let number1 = parseFloat(document.getElementById("number1").value);
-            let number2 = parseFloat(document.getElementById("number2").value);
-            let calculate = number1 + number2;
-            document.getElementById("result").value = calculate;
-        }
+}
 
-        function sub() {
-            let number1 = parseInt(document.getElementById("number1").value);
-            let number2 = parseInt(document.getElementById("number2").value);
-            let calculate = number1 - number2;
-            document.getElementById("result").value = calculate;
-        }
+function sub(){
+let number1 = parseInt(document.getElementById("number1").value);
+let number2 = parseInt(document.getElementById("number2").value);
+let sum = number1 - number2 ;
+    document.getElementById ("result").value= sum;
 
-        function multi() {
-            let number1 = parseInt(document.getElementById("number1").value);
-            let number2 = parseInt(document.getElementById("number2").value);
-            let calculate = number1 * number2;
-            document.getElementById("result").value = calculate;
-        }
+}
+function multi(){
+let number1 = parseInt(document.getElementById("number1").value);
+let number2 = parseInt(document.getElementById("number2").value);
+let sum = number1 * number2 ;
+    document.getElementById ("result").value= sum;
 
-        function div() {
-            let number1 = parseInt(document.getElementById("number1").value);
-            let number2 = parseInt(document.getElementById("number2").value);
-            let calculate = number1 / number2;
-            document.getElementById("result").value = calculate;
-        }
+}
+function div(){
+let number1 = parseInt(document.getElementById("number1").value);
+let number2 = parseInt(document.getElementById("number2").value);
+let sum = number1 / number2 ;
+    document.getElementById ("result").value= sum;
 
-        function mod() {
-            let number1 = parseInt(document.getElementById("number1").value);
-            let number2 = parseInt(document.getElementById("number2").value);
-            let calculate = number1 % number2;
-            document.getElementById("result").value = calculate;
-        }
+}
  
-        function percentage() {
-            let number1 = parseInt(document.getElementById("number1").value);
-            let number2 = parseInt(document.getElementById("number2").value);
-            let calculate = ((number1/100)*number2)+number1;
-            document.getElementById("result").value = calculate;
-        }
+function mod(){
+let number1 = parseInt(document.getElementById("number1").value);
+let number2 = parseInt(document.getElementById("number2").value);
+let sum = number1 % number2 ;
+    document.getElementById ("result").value= sum;
 
+}
+ 
+function percentage(){
+let number1 = parseInt(document.getElementById("number1").value);
+let number2 = parseInt(document.getElementById("number2").value);
+let sum =(number1/100)*number2 ;
+    document.getElementById ("result").value= sum;
 
-    </script>
+}
+ 
+ </script>
 </body>
 
 </html>
