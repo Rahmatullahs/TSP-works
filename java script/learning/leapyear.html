@@ -7,22 +7,40 @@
 </head>
 <body>
     
-
-
 <script>
 
 let input =prompt("leap year?");
 
-// if ( if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0))){
-if( input % 4 === 0 && input % 400 === 0 ){
-document.write("Congress!!! its a leap year!")
 
+// if( input % 4 == 0 && input % 400 == 0){
+// document.write("Congress!!! its a leap year!")
+
+// }
+// else{
+
+//     document.write("sorry! its not a leap year")
+// }
+
+
+if(input % 4 == 0){
+if (input % 100 == 0){
+if(input%400 == 0){
+document.write("leap");
 }
+
 else{
-
-    document.write("its not a leap year, sorry!")
+    document.write("not");
+}
 }
 
+else{
+    document.write("leap");
+}
+
+}
+else{document.write("not");
+
+}
 
 </script>
 
