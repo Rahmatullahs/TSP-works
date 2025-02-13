@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Input Numbers</label>
+        <input type="text" id="inputone"><br>
+        <label for="">Input Numbers</label>
+        <input type="text" id="inputtwo">
+<br> <br>
+<input type="button" value="+" onclick="add()">
+<input type="button" value="-" onclick="sub()">
+<input type="button" value="*" onclick="multi()">
+<input type="button" value="/" onclick="div()">
+<input type="button" value="%" onclick="mod()">
+<input type="button" value="percentage" onclick="percentage()">
+
+
+<input type="text" id="answer">
+    </form>
+
+<script>
+
+function add() {
+    let inputone = parseInt(document.getElementById("inputone").value);
+    let inputtwo = parseInt(document.getElementById("inputtwo").value);
+    let calculate = inputeone + inputetwo ;
+    document.getElementById("answer").value = calculate;
+}
+
+</script>
+
+
+</body>
+</html>
