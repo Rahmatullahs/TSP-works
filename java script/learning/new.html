@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+     let price =parseFloat(prompt("any amount"));  
+if( price < 100 ){
+document.write(price);
+}
+else if(price <= 300 ){
+document.write(price-(price*.10));
+} 
+else if(price <= 700 ){
+document.write(price-(price*.15));
+} 
+else if(price <= 1000 ){
+document.write(price-(price*.20));
+} 
+
+else{
+    document.write(price-(price*.25));
+}
+
+    </script>
+</body>
+
+</html>
