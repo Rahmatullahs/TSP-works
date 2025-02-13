@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Number1</label> <br>
+    <input type="text" id="number1"> <br>
+    <label for="">Number2</label> <br>
+    <input type="text" id="number2"> <br>
+    <label for="">Number3</label> <br>
+    <input type="text" id="number3"> <br>
+    <label for="">Number4</label> <br>
+    <input type="text" id="number4"> <br>
+    
+    <input type="button" value="maxi" onclick="maximum()">
+    <input type="button" value="mini" onclick="minimum()"> <br> <br>
+    <input type="text" id="result">
+
+<script>
+
+function maximum() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let number3 = parseInt(document.getElementById("number3").value);
+            let number4 = parseInt(document.getElementById("number4").value);
+
+
+           if(number1>=number2 && number1>=number3 && number1>=number4){
+document.getElementById("result").value=""+number1;
+
+
+           } 
+           else if(number2>=number3 && number2>=number4){
+
+            document.getElementById("result").value=""+number2;
+           }
+
+           else if(number3>=number4 ){
+
+            document.getElementById("result").value=""+number3;
+}
+
+else{
+            document.getElementById("result").value=""+number4;
+
+           }
+
+            
+        }
+
+        function minimum() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            let number3 = parseInt(document.getElementById("number3").value);
+            let number4 = parseInt(document.getElementById("number4").value);
+
+
+           if(number1<=number2 && number1<=number3 && number1<=number4){
+document.getElementById("result").value=""+number1;
+
+
+           } 
+           else if(number2<=number3 && number2<=number4){
+
+            document.getElementById("result").value=""+number2;
+           }
+
+           else if(number3<=number4 ){
+
+            document.getElementById("result").value=""+number3;
+}
+
+else{
+            document.getElementById("result").value=""+number4;
+
+           }
+
+            
+        }
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
