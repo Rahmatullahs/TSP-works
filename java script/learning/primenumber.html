@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- which number divided by 1 and that number its own, its a prime number
     there is no reminder -->
- <script>
-let userinput=parseInt(prompt("enter a number"));
+    <script>
+        let userinput = parseInt(prompt("enter a number"));
+        let count = 0
+        for (let i=1; i<=userinput; i++) {
 
-let count=0
-for(let i=1;i<=userinput;i++){
+            if (userinput % i == 0) {
+                count += 1;
 
-    if (userinput%i == 0){
-count+=1;
+            }
+        }
+        if (count == 2) {
 
-    }
-}
-if(count==2){
-
-document.write(userinput="is prime number");
-
-
-}
-else {
-
-    document.write(userinput="is not a prime number");
-}
+            document.write(userinput = "is prime number");
 
 
- </script>   
+        }
+        else {
+
+            document.write(userinput = "is not a prime number");
+        }
+
+
+    </script>
 
 
 
@@ -43,4 +44,5 @@ else {
 
 
 </body>
+
 </html>
