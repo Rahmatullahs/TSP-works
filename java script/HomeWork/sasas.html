@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+
+    var num1, num2;
+
+
+let num1 = prompt("Input the First integer", "0");
+let  num2 = prompt("Input the second integer", "0");
+
+// Compare the values and print the larger or equality message
+if (parseInt(num1, 10) > parseInt(num2, 10)) {
+  console.log("The larger of " + num1 + " and " + num2 + " is " + num1 + ".");
+} else if (parseInt(num2, 10) > parseInt(num1, 10)) {
+  console.log("The larger of " + num1 + " and " + num2 + " is " + num2 + ".");
+} else {
+  console.log("The values " + num1 + " and " + num2 + " are equal.");
+}
+
+
+
+
+// Sample Solution-2:
+
+// JavaScript Code:
+
+// // Function to compare two numbers and return the larger one or a message for equality
+// function compareNumbers(num1, num2) {
+//   if (num1 > num2) {
+//     return "The larger of " + num1 + " and " + num2 + " is " + num1 + ".";
+//   } else if (num2 > num1) {
+//     return "The larger of " + num1 + " and " + num2 + " is " + num2 + ".";
+//   } else {
+//     return "The values " + num1 + " and " + num2 + " are equal.";
+//   }
+// }
+
+// // Example usage
+// var result = compareNumbers(5, 8);
+// console.log(result);
+
+// result = compareNumbers(10, 5);
+// console.log(result);
+
+// result = compareNumbers(7, 7);
+// console.log(result); 
+
+
+</script>
+</body>
+</html>

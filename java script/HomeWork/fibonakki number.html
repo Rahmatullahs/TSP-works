@@ -35,17 +35,28 @@
 // document.write(c+" <br>");
 
 let n = prompt("enter limit");
-let a=0 ,b=1, count=0;
+let a=0 ,b=1, count=0 ;
 document.write("fibonakki seris: ");
 while (count < n){
-     document.write(a+" ");
+    //  document.write(a+" ");
+
      let temp = a+b;
      a=b;
      b=temp;
+     document.write(count+" ");
      count++;
 }
 
-
+// let n = prompt("enter limit");
+// let a=0 ,b=1, sum=0 ,total=0;
+// document.write("fibonakki seris: ");
+// for( i=3;i<=n ;i++) {
+// sum=a+b;
+// total+=sum;
+// a=b;
+// b=sum;
+// }
+// document.write(total+1);
 </script>
 
 
