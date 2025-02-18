@@ -6,12 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-   
-    
+<script>  
+    let myary=[20,10,8,5,2,4]
+for( let i=0; i <myary.length-1; i++){
+    for(let j=0; j<myary.length-1-i;j++);
+
+if(myary[j]>myary[j+1]){
+
+let temp=myary[j];   
+myary[j]=myary[j+1];
+myary[j+1]=temp;
+}
 
 
 
+}
 
-    
+
+
+</script> 
 </body>
 </html>
