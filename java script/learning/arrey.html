@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- array and link list -->
+    <!-- array contain data orderly. there is no gap in data.
+link list conatain data but its store data disorderly and they are conected by link .
+example;
+let frouits=["apple","banana","licchi"]
+data contain by bits  like 0 1 2
+we can call data by frouits=[0] -->
+    
+<body>
+    <script>
+        let names = ['Shimanto', 'Atique', 'Imran', 'Masud', 'Istiaq', 'Arif', 'Atik', 'Reja'];
+        let passwords = ['123', '234', '456', '678', '576', '256', '134', '590'];
+
+        let userName = prompt('Enter the user name').toLowerCase();
+
+
+        for (let i = 0; i < names.length; i++) {
+            if (userName == names[i].toLowerCase()) {
+                let index = i;
+                let password = prompt('Enter your password');
+
+                if (password == passwords[index]) {
+                    document.write("Welcome" + " " + userName);
+                }
+                else {
+                    document.write('Password is incorrect');
+                }
+                break;
+
+
+            }
+            if (i == names.length - 1) {
+                document.write("User name is Incorrect");
+
+            }
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>   }

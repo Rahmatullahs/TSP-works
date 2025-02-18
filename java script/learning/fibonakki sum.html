@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    let n = prompt("enter limit");
+let a=0 ,b=1, sum=0 ,total=0;
+document.write("fibonakki seris: ");
+for( i=3;i<=n ; i++) {
+   
+sum=a+b;
+total+=sum;
+
+a=b;
+b=sum;
+
+}
+document.write(total+1);
+
+</script>
+</body>
+</html>
