@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <label for="">Email</label>
     <input type="text" id="mail"><br><br>
-    <label for="">submit</label>
+    <span id="message"></span>
     <input type="button" value="check" onclick="cheakmail()">
 
 
-    <!-- regex pattarn -->
-<script>
-    function cheakmail(){
+
+    <script>
+        function cheakmail() {
 
 
-let mail=document.getElementById("mail").value;
-let pattern= /^\s+@\s+\.\s+$/;
+            let mail = document.getElementById("mail").value;
+            let pattern = /^\s+@\s+\.\s+$/;
 
-if(pattern.test(email)){
-    document.getElementById("massage").innerHTML="<span style='color:green;'>Email is valid</span><br>";
-    
+            if (pattern.test(mail)) {
+                document.getElementById("message").innerHTML = "<span style='color:green;'>Email is valid</span><br>";
+            }
+            else {
+                document.getElementById("message").innerHTML = "<span style='color:green;'>Email is not valid</span><br>";
+            }
 
-}
-else{
-    document.getElementById("massage").innerHTML="<span style='color:green;'>Email is not valid</span><br>";
-}
-
-
-    }
+        }
 
 
     </script>
 </body>
+
 </html>
