@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<script>  
-    let myary=[20,10,8,5,2,4]
-for( let i=0; i <myary.length-1; i++){
-    for(let j=0; j<myary.length-1-i;j++);
+    <script>
+      
+        let myArray = [10, 90, 50, 40, 70];
 
-if(myary[j]>myary[j+1]){
+        for (let i = 0; i <  myArray.length - 1; i++) {
+            for (let k = 0; k <  myArray.length - 1 - i; k++) {
 
-let temp=myary[j];   
-myary[j]=myary[j+1];
-myary[j+1]=temp;
-}
+                if (myArray[k] > myArray[k + 1]){
+                    let temp=myArray[k];
+                    myArray[k]=myArray[k+1];
+                    myArray[k+1]=temp;
 
+                }
 
+            }
+        }
+document.write(myArray);
 
-}
-
-
-
-</script> 
+    </script>
 </body>
+
 </html>

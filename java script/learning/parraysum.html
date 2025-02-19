@@ -8,26 +8,25 @@
 </head>
 
 <body>
-
     <script>
 
-        let n = parseInt(prompt('enter repitet number'));
-        let sum = 0;
-        let myArra = [];
-
+        
+        let n = parseInt(prompt('enter repeat number'));
+        let mary = [];
+        let sum=0;
         for (let i = 0; i < n; i++) {
-            let input = parseInt(prompt('enter repitet number'));
-
+            let input = parseInt(prompt('enter your number'));
             sum += input;
+            mary[i] = input;
 
-            myArra[i] = input;
+
 
         }
 
-        document.write(myArra + "<br>");
+        document.write(mary + '<br>');
         document.write(sum);
 
-        
+
     </script>
 </body>
 
