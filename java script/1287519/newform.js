@@ -3,9 +3,7 @@
 
 
 
-function myForm() {
-
-
+function myform() {
 
     let name = document.getElementById('name').value;
     let contact = document.getElementById('contact').value;
@@ -13,27 +11,21 @@ function myForm() {
     let location = document.getElementById('location').value;
 
     let gender = document.querySelector('input[name="gender"]:checked');
+    let course = document.querySelectorAll('input[name="courses"]:checked');
 
-    let course = document.querySelectorAll('input[name="course"]:checked');
-
-
-
-    let coursevalue = [];
+    let courseValue = [];
     for (let i = 0; i < course.length; i++) {
-        coursevalue.push(course[i].value);
+        courseValue.push(course[i].value);
     }
 
-    let output = "Name: " + name + "\n"
-    "Contact: " + contact + "\n"
-    "Remark: " + remark + "\n"
-    "Gender: " + gender + "\n"
-    "Course: " + coursevalue + "\n"
-    "Location: " + location + "\n";
-
-
-    let newWindow = window.open('', '_blank');
+    let output = 'Name: ' + name + '<br>'
+         + 'contact: ' + contact + '<br>'
+        + 'Remark: ' + remark + '<br>'
+        + 'Gender: ' + gender.value + '<br>'
+        + 'location:' + location + '<br>'
+        +'courses: '+courseValue+ '<br>';
+        
+    let newWindow = window.open("", '_blank');
     newWindow.document.write("<pre>" + output + "</pre>");
-
 }
-// let myForm=document.getElementById('myform');
-// myForm.addEventListener('submit',myForm);
+
