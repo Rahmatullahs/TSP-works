@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArraySort</title>
 </head>
 
 <body>
+
     <script>
         let enter = parseInt(prompt('enter your size'));
         let myArray = [];
@@ -16,21 +17,17 @@
             myArray[i] = input;
         }
 
-        for(let j=0; j<myArray.length-1;j++ ){
-            for(let k=0;k<myArray.length-1-j;k++ ){
-if(myArray[k]>myArray[k+1]){
-    let temp=myArray[k];
-    myArray[k]=myArray[k+1];
-    myArray[k+1]=temp;
+        for (let j = 0; j < myArray.length - 1; j++) {
+            for (let k = 0; k < myArray.length - 1 - j; k++) {
+                if (myArray[k] > myArray[k + 1]) {
+                    let temp = myArray[k];
+                    myArray[k] = myArray[k + 1];
+                    myArray[k + 1] = temp;
 
-}
+                }
             }
 
         }
-
-
-
-
         document.write(myArray);
     </script>
 
