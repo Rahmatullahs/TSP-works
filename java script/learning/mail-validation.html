@@ -20,7 +20,7 @@
 
 
             let mail = document.getElementById("mail").value;
-            let pattern = /^\s+@\s+\.\s+$/;
+            let pattern = /^\S+@\S+\.\S+$/;
 
             if (pattern.test(mail)) {
                 document.getElementById("message").innerHTML = "<span style='color:green;'>Email is valid</span><br>";
