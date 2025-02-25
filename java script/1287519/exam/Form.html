@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineForm</title>
+</head>
+<body>
+
+  <form action="">
+<label for="">Name</label>
+<input type="text" name="" id="name"><br>
+<label for="">Contact</label>
+<input type="text" id="contact"><br>
+<label for="">Remarks</label><br>
+<textarea name="" id="remark" cols="20" rows="5"></textarea><br>
+
+<label for="">Sex</label>
+<input type="radio" name="sex" value="Male">Male
+<input type="radio" name="sex" value="Female"> Female <br>
+
+<label for="">Courses</label>
+<input type="checkbox" name="course" value="NT">NT
+<input type="checkbox" name="course" value="IAD">IAD
+<input type="checkbox" name="course" value="DDD">DDD
+<input type="checkbox" name="course" value="ESAD">ESAD
+<br>
+<label for="">Location</label>
+<select name="location" id="location">
+<option value="Mirpur">Mirpur</option>
+<option value="Dhanmondi">Dhanmondi</option>
+<option value="Bonani">Bonani</option>
+</select><br>
+
+<input type="button" value="submit" onclick="datacall()"> <br>
+
+<input type="reset" value="reset">
+  </form>  
+  <script src="Form.js"></script>
+</body>
+</html>
