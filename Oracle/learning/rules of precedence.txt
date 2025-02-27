@@ -11,6 +11,24 @@ where department_id=60
 or department_id=80
 and salary>10000;
 
+select*from hr.employees
+
+
+select concat(last_name,first_name)
+from hr.employees
+
+
+select concat(last_name,concat(' ',first_name)) as "name"
+from hr.employees
+
+
+
+
+
+
+
+
+
 SELECT first_name||' '||last_name "Name",department_id,salary,hire_date
 FROM employees
 ORDER BY hire_date;
