@@ -14,6 +14,7 @@ and salary>10000;
 SELECT first_name||' '||last_name "Name",department_id,salary,hire_date
 FROM employees
 ORDER BY hire_date;
+
 SELECT first_name||' '||last_name "Name",department_id,salary,hire_date
 FROM employees
 ORDER BY hire_date desc;
@@ -108,4 +109,8 @@ where substr(last_name, 2,2)='an';
 select last_name
 from employees
 where substr(last_name,-1)='n';
+
+select last_name
+from employees
+where substr(last_name,-2)='an';
 
