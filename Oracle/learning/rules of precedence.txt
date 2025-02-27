@@ -79,5 +79,33 @@ SELECT   &first_col as "Emp name",&second_col,&thir_col
 FROM &table_name
 
 
+SELECT   lower(last_name),initcap(job_id),salary,department_id,upper(first_name)
+FROM employees;
 
+
+SELECT   lower('HELLO')
+FROM dual;
+
+
+SELECT  (last_name),(job_id),salary,department_id,(first_name)
+FROM employees
+WHERE last_name=initcap('king');
+
+
+SELECT  last_name,(job_id),concat(last_name,concat(' ',first_name)) as "name",salary,department_id,first_name
+FROM employees
+WHERE last_name=initcap('king');
+
+
+select job_id
+from employees;
+--where substr(job_id,4)='rep'
+
+select last_name
+from employees
+where substr(last_name, 2,2)='an';
+
+select last_name
+from employees
+where substr(last_name,-1)='n';
 
