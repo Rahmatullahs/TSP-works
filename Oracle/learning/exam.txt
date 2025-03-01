@@ -1,8 +1,9 @@
 
+    
 --          ans 1       
 SELECT last_name,salary
     FROM  employees
-where salary > 12000 ;
+where salary  not  between 5000 and 12000 ;
 
 
 --          ans 2
