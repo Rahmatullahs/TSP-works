@@ -1,0 +1,16 @@
+[11:03 pm, 05/03/2025] mdrahmatullahshahrukh: SELECT department_id, round(avg(salary)) 
+FROM hr.employees 
+group by department_id
+having max(SALARY)>12000;
+[11:09 pm, 05/03/2025] mdrahmatullahshahrukh: SELECT first_name
+FROM hr.employees
+where first_name like 'S%';
+[11:17 pm, 05/03/2025] mdrahmatullahshahrukh: --Question No 4
+SELECT AVG(salary)
+FROM hr.employees
+WHERE job_id LIKE '%SA%';
+
+--Question No 5
+SELECT first_name||' '||last_name AS "Full Name", hire_date
+FROM hr.employees
+ORDER BY hire_date ASC;
